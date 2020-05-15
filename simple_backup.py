@@ -10,6 +10,8 @@ import time
 def createParser ():
     parser = argparse.ArgumentParser()
     parser.add_argument ('-s', '--source', default = '')
+    parser.add_argument ('-e', '--extension', default = 'bak')
+    parser.add_argument ('-l', '--queuelen', default = '5')  
     return parser
 
 #Каталог из которого будем брать изображения (перенести в параметр??) 
